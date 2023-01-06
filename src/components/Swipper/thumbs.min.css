@@ -1,0 +1,25 @@
+(function $csb$eval(require, module, exports, process, global, __dirname, __filename, $csbImport) {
+function createStyleNode(id, content) {
+  var styleNode =
+    document.getElementById(id) || document.createElement('style');
+
+  styleNode.setAttribute('id', id);
+  styleNode.type = 'text/css';
+  if (styleNode.styleSheet) {
+    styleNode.styleSheet.cssText = content;
+  } else {
+    styleNode.innerHTML = '';
+    styleNode.appendChild(document.createTextNode(content));
+  }
+  document.head.appendChild(styleNode);
+}
+
+createStyleNode(
+  "/node_modules/swiper/modules/thumbs/thumbs.min.css:-css",
+  ""
+);
+
+module.hot.accept()
+
+//# sourceURL=https://9uw7f4.csb.app/node_modules/swiper/modules/thumbs/thumbs.min.css
+})
