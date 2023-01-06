@@ -18,7 +18,7 @@ const Swipper = () => {
         // navigation={true}
         navigation={{
           prevEl: swiperNavPrevRef.current,
-          nextEl: swiperNavNextRef.current
+          nextEl: swiperNavNextRef.current,
         }}
         // effect={'fade'}
 
